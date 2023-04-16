@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: hanken;
+}
+
+@font-face {
+  font-family: hanken;
+  src: url(fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+}
+
+.right-bar .selections {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+img {
+  height: 100%;
+  background-color: transparent;
+}
+
+.right-bar {
+  padding: 30px;
+  background-color: white;
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual {
+  display: flex;
+  padding: 1rem;
+  border-radius: 10px;
+  gap: 4px;
+}
+
+.layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.layout > * {
+  background-color: transparent;
+}
+
+.layout div:first-child {
+  display: flex;
+}
+
+.reaction {
+  color: hsl(0, 100%, 67%);
+  background-color: rgb(216, 216, 179);
+}
+
+.memory {
+  color: hsl(39, 100%, 56%);
+  background-color: rgb(204, 204, 163);
+}
+
+.verbal {
+  color: hsl(166, 100%, 37%);
+  background-color: rgb(161, 196, 161);
+}
+
+.visual {
+  color: hsl(234, 85%, 45%);
+  background-color: rgb(146, 146, 206);
+}
+
+.continue-button {
+  padding: 1rem;
+  border-radius: 20px;
+  border: none;
+  background-color: hsl(224, 30%, 27%);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  color: white;
+}
+
+.continue-button:hover {
+  background-color: rgb(44, 1, 160);
+}
+
+h1 {
+  font-size: 1.3em;
+  color: rgb(71, 71, 129);
+  font-weight: bolder;
+}
+
+.container {
+  display: flex;
+  max-width: 600px;
+  max-height: 500px;
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: white;
+  
+
+
+
+}
+
+h2,
+p {
+  text-align: center;
+}
+
+.left-bar {
+  background: rgb(46,43,233);
+  background: linear-gradient(0deg, rgba(46,43,233,1) 0%, rgba(120,87,255,1) 100%);
+  padding: 3rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  border-radius: 0 2rem 2rem 0;
+  overflow: hidden;
+}
+
+.low-opacity {
+  color: hsl(241, 100%, 89%);
+  font-size: 1rem;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgb(78,33,202);
+background: linear-gradient(0deg, rgba(78,33,202,1) 0%, rgba(36,33,202,1) 100%);
+opacity: 60%;
+  width: 11rem;
+  height: 11rem;
+  color: white;
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+
+.circle p {
+  font-size: 3rem;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.bottom p {
+  font-size: 0.9rem;
+}
